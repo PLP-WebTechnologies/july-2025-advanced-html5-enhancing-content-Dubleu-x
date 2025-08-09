@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 lists, tables, media, and form example with built-in validation.">
+    <title>Enhanced HTML5 Form Example</title>
+
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Content and Form </h1>
+    <p>Contents Include lists, tables, media, and a fully-featured HTML5 form with built-in validation.</p>
+</header>
+
+<section>
+    <h2>Favorite Programming Languages</h2>
+    <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>Java</li>
+        <li>C++</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Course Schedule</h2>
+    <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Activity</th>
+                <th>Instructor</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Skating</td>
+                <td>Mr James</td>
+                <td>10:00 AM - 02:00 PM</td>
+            </tr>
+            <tr>
+                <td>Singing</td>
+                <td>Madam Lily</td>
+                <td>2:30 PM - 04:00 PM</td>
+            </tr>
+            <tr>
+                <td>Swimming</td>
+                <td>Peter</td>
+                <td>4:30 AM - 06:30 AM</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section>
+    <h2>Media Gallery</h2>
+    <figure>
+        <img src="media/61413702-hd-wallpaper-juice-wrld-rip.jpg" alt="Sample image" width="700" height="400">
+        <figcaption>Juice Wrld</figcaption>
+    </figure>
+    <audio controls>
+        <source src="media/Likkle Addi - Up A Notch - (ORIGINAL AUDIO).mp3 " type="audio/mpeg">
+        <figcaption>Likkle Addi - Up A Notch</figcaption>
+        Your browser does not support the audio tag.
+    </audio>
+    <video controls width="400">
+        <source src="media/WhatsApp Video 2025-08-09 at 17.36.19.mp4" type="video/mp4" >
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+<section>
+    <h2>Registration Form</h2>
+    <form action="submit.php" method="POST" autocomplete="on">
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Philip Wau" required minlength="3">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000" pattern="\+?[0-9\s\-]{10,15}" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required minlength="5">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="6">
+
+            <label for="confirmpassword">Confirm Password:</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" required minlength="6">
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">--Please choose an option--</option>
+                <option value="web">Web Development</option>
+                <option value="db">Database Design</option>
+                <option value="net">Networking Fundamentals</option>
+            </select>
+
+            <label>Preferred Contact Method:</label>
+            <input type="radio" id="contact-email" name="contactmethod" value="email" required>
+            <label for="contact-email">Email</label>
+
+            <input type="radio" id="contact-phone" name="contactmethod" value="phone" required>
+            <label for="contact-phone">Phone</label>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Your message..."></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit Registration">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; Sylvester Kamau. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
